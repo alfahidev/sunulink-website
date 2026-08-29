@@ -1,4 +1,4 @@
-import { useState, type ChangeEvent, type FormEvent } from 'react';
+import { useState, type ChangeEvent, type FormEvent } from "react";
 import {
   User,
   Phone,
@@ -8,17 +8,17 @@ import {
   Satellite,
   Loader2,
   MapPin,
-} from 'lucide-react';
-import Button from '@/components/ui/Button';
-import Container from '@/components/ui/Container';
-import Input from '@/components/ui/Input';
-import Select from '@/components/ui/Select';
-import Textarea from '@/components/ui/Textarea';
-import Card from '@/components/ui/Card';
-import AnimatedSection from '@/components/ui/AnimatedSection';
-import { useGeolocation } from '@/hooks/useGeolocation';
-import { regions } from '@/data/regions';
-import { sendStarlinkRequest } from '@/lib/resend';
+} from "lucide-react";
+import Button from "@/components/ui/Button";
+import Container from "@/components/ui/Container";
+import Input from "@/components/ui/Input";
+import Select from "@/components/ui/Select";
+import Textarea from "@/components/ui/Textarea";
+import Card from "@/components/ui/Card";
+import AnimatedSection from "@/components/ui/AnimatedSection";
+import { useGeolocation } from "@/hooks/useGeolocation";
+import { regions } from "@/data/regions";
+import { sendStarlinkRequest } from "@/lib/resend";
 
 export default function StarlinkFormSection() {
   const {
@@ -29,16 +29,18 @@ export default function StarlinkFormSection() {
   } = useGeolocation();
 
   const [formData, setFormData] = useState({
-    fullName: '',
-    phone: '',
-    email: '',
-    region: '',
-    departement: '',
-    address: '',
-    message: '',
+    fullName: "",
+    phone: "",
+    email: "",
+    region: "",
+    departement: "",
+    address: "",
+    message: "",
   });
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-  const [statusMessage, setStatusMessage] = useState('');
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
+  const [statusMessage, setStatusMessage] = useState("");
 
   const selectedRegion = regions.find((r) => r.name === formData.region);
   const departementOptions = selectedRegion
@@ -46,7 +48,7 @@ export default function StarlinkFormSection() {
     : [];
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -56,32 +58,32 @@ export default function StarlinkFormSection() {
     setFormData((prev) => ({
       ...prev,
       region: e.target.value,
-      departement: '',
+      departement: "",
     }));
   };
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    setStatus('loading');
+    setStatus("loading");
     try {
       const response = await sendStarlinkRequest({
         ...formData,
-        latitude: position ? position.latitude.toString() : '',
-        longitude: position ? position.longitude.toString() : '',
+        latitude: position ? position.latitude.toString() : "",
+        longitude: position ? position.longitude.toString() : "",
       });
-      setStatus('success');
+      setStatus("success");
       setStatusMessage(response.message);
       setFormData({
-        fullName: '',
-        phone: '',
-        email: '',
-        region: '',
-        departement: '',
-        address: '',
-        message: '',
+        fullName: "",
+        phone: "",
+        email: "",
+        region: "",
+        departement: "",
+        address: "",
+        message: "",
       });
     } catch {
-      setStatus('error');
+      setStatus("error");
       setStatusMessage("Une erreur est survenue lors de l'envoi.");
     }
   };
@@ -93,22 +95,27 @@ export default function StarlinkFormSection() {
           {/* Left Info Column */}
           <AnimatedSection>
             <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3.5 py-1 text-sm font-semibold text-primary mb-6">
-              🛰️ Service Officiel Starlink Sénégal
+              🛰️ Service Officiel Kit Satellite Sénégal
             </div>
             <h2 className="text-3xl md:text-4xl font-extrabold text-dark mb-6 tracking-tight">
-              Installation du Kit Starlink au Sénégal
+              Installation du Kit Satellite au Sénégal
             </h2>
             <p className="text-dark/80 text-lg mb-8 leading-relaxed">
-              Bénéficiez d&apos;une connexion <strong>Internet haut débit par satellite</strong> ultra-rapide partout au Sénégal. Remplissez le formulaire ci-dessous pour solliciter nos techniciens certifiés pour l&apos;installation, le pointage et la mise en service de votre <strong>Kit Starlink</strong>.
+              Bénéficiez d&apos;une connexion{" "}
+              <strong>Internet haut débit par satellite</strong> ultra-rapide
+              partout au Sénégal. Remplissez le formulaire ci-dessous pour
+              solliciter nos techniciens certifiés pour l&apos;installation, le
+              pointage et la mise en service de votre{" "}
+              <strong>Kit Satellite</strong>.
             </p>
 
             <ul className="space-y-4 mb-10">
               {[
-                'Internet haut débit par satellite ultra-rapide & faible latence',
-                'Installation Kit Starlink professionnelle et sécurisée',
-                'Configuration complète du routeur WiFi et du réseau local',
-                'Supervision, support technique 24/7 et maintenance terrain',
-                'Couverture totale dans les 14 régions et 46 départements du Sénégal',
+                "Internet haut débit par satellite ultra-rapide & faible latence",
+                "Installation Kit Satellite professionnelle et sécurisée",
+                "Configuration complète du routeur WiFi et du réseau local",
+                "Supervision, support technique 24/7 et maintenance terrain",
+                "Couverture totale dans les 14 régions et 46 départements du Sénégal",
               ].map((benefit, i) => (
                 <li key={i} className="flex items-start text-dark/90">
                   <CheckCircle className="w-5 h-5 text-accent mr-3 mt-1 shrink-0" />
@@ -120,8 +127,13 @@ export default function StarlinkFormSection() {
             <div className="flex items-center gap-4 p-6 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-2xl border border-gray-200">
               <Satellite className="w-12 h-12 text-secondary shrink-0" />
               <div>
-                <p className="text-sm font-bold text-primary">Intervention Rapide sur Tout le Territoire</p>
-                <p className="text-xs text-gray-600 mt-0.5">Dakar, Thiès, Saint-Louis, Touba et l&apos;ensemble des régions sénégalaises.</p>
+                <p className="text-sm font-bold text-primary">
+                  Intervention Rapide sur Tout le Territoire
+                </p>
+                <p className="text-xs text-gray-600 mt-0.5">
+                  Dakar, Thiès, Saint-Louis, Touba et l&apos;ensemble des
+                  régions sénégalaises.
+                </p>
               </div>
             </div>
           </AnimatedSection>
@@ -133,14 +145,14 @@ export default function StarlinkFormSection() {
                 Demander une installation
               </h3>
 
-              {status === 'success' && (
+              {status === "success" && (
                 <div className="mb-6 p-4 bg-green-50 text-green-700 rounded-lg border border-green-200 flex items-start">
                   <CheckCircle className="w-5 h-5 mr-2 mt-0.5" />
                   <p>{statusMessage}</p>
                 </div>
               )}
 
-              {status === 'error' && (
+              {status === "error" && (
                 <div className="mb-6 p-4 bg-red-50 text-red-700 rounded-lg border border-red-200">
                   <p>{statusMessage}</p>
                 </div>
@@ -198,7 +210,7 @@ export default function StarlinkFormSection() {
                     placeholder={
                       !formData.region
                         ? "Sélectionnez d'abord une région"
-                        : 'Sélectionnez un département'
+                        : "Sélectionnez un département"
                     }
                     options={departementOptions}
                     value={formData.departement}
@@ -281,9 +293,9 @@ export default function StarlinkFormSection() {
                   type="submit"
                   variant="primary"
                   className="w-full mt-4"
-                  disabled={status === 'loading'}
+                  disabled={status === "loading"}
                 >
-                  {status === 'loading' ? (
+                  {status === "loading" ? (
                     <Loader2 className="w-5 h-5 mr-2 animate-spin" />
                   ) : (
                     <Send className="w-5 h-5 mr-2" />

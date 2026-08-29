@@ -1,7 +1,13 @@
-import { motion } from 'framer-motion';
-import { ArrowRight, ChevronDown, Satellite, ShieldCheck, Zap } from 'lucide-react';
-import Button from '@/components/ui/Button';
-import Container from '@/components/ui/Container';
+import { motion } from "framer-motion";
+import {
+  ArrowRight,
+  ChevronDown,
+  Satellite,
+  ShieldCheck,
+  Zap,
+} from "lucide-react";
+import Button from "@/components/ui/Button";
+import Container from "@/components/ui/Container";
 
 export default function HeroSection() {
   return (
@@ -15,26 +21,26 @@ export default function HeroSection() {
       {/* Floating Decorative Elements */}
       <div
         className="absolute top-1/4 left-1/4 w-4 h-4 bg-secondary rounded-full opacity-50 animate-float"
-        style={{ animationDelay: '0s' }}
+        style={{ animationDelay: "0s" }}
       />
       <div
         className="absolute bottom-1/4 right-1/4 w-6 h-6 bg-accent rounded-full opacity-40 animate-float"
-        style={{ animationDelay: '1s' }}
+        style={{ animationDelay: "1s" }}
       />
       <div
         className="absolute top-1/2 right-1/3 w-3 h-3 bg-white rounded-full opacity-30 animate-float"
-        style={{ animationDelay: '2s' }}
+        style={{ animationDelay: "2s" }}
       />
       <div
         className="absolute bottom-1/3 left-1/3 w-5 h-5 bg-secondary rounded-full opacity-40 animate-float"
-        style={{ animationDelay: '1.5s' }}
+        style={{ animationDelay: "1.5s" }}
       />
 
       <Container className="relative z-10 text-center py-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: 'easeOut', staggerChildren: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut", staggerChildren: 0.2 }}
           className="flex flex-col items-center"
         >
           {/* Badge */}
@@ -74,8 +80,11 @@ export default function HeroSection() {
             transition={{ delay: 0.6 }}
             className="text-base sm:text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed"
           >
-            <strong>SUNULINK Telecom SA</strong>, votre partenaire de confiance en solutions télécoms au Sénégal.
-            Déploiement réseau, <strong>Internet haut débit</strong> et <strong>Installation Kit Starlink</strong> certifiée dans les 14 régions.
+            <strong>SUNULINK Telecom SA</strong>, votre partenaire de confiance
+            en solutions télécoms au Sénégal. Déploiement réseau,{" "}
+            <strong>Internet haut débit</strong> et{" "}
+            <strong>Installation Kit Starlink</strong> certifiée dans les 14
+            régions.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -92,7 +101,7 @@ export default function HeroSection() {
               className="w-full sm:w-auto shadow-xl"
             >
               <Satellite className="w-5 h-5 mr-2" />
-              Installer un Kit Starlink
+              Installer un Kit Satellite
               <ArrowRight className="w-4 h-4 ml-1" />
             </Button>
             <Button
@@ -132,7 +141,7 @@ export default function HeroSection() {
       <motion.div
         className="absolute bottom-6 left-1/2 -translate-x-1/2"
         animate={{ y: [0, 8, 0] }}
-        transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
+        transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
       >
         <a
           href="#services-details"
