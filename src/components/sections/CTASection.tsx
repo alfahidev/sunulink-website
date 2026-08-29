@@ -1,6 +1,6 @@
-import Container from '@/components/ui/Container';
-import AnimatedSection from '@/components/ui/AnimatedSection';
-import Button from '@/components/ui/Button';
+import Container from "@/components/ui/Container";
+import AnimatedSection from "@/components/ui/AnimatedSection";
+import Button from "@/components/ui/Button";
 
 export default function CTASection() {
   return (
@@ -20,7 +20,7 @@ export default function CTASection() {
             <Button variant="primary" href="#starlink">
               Demander un devis
             </Button>
-            <Button variant="outline" href="tel:+221000000000">
+            <Button variant="outline" href="tel:+221771419283">
               Nous appeler
             </Button>
           </div>

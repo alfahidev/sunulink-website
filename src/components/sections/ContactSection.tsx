@@ -1,29 +1,29 @@
-import { Phone, Mail, MapPin } from 'lucide-react';
-import Container from '@/components/ui/Container';
-import SectionHeading from '@/components/ui/SectionHeading';
-import AnimatedSection from '@/components/ui/AnimatedSection';
-import Card from '@/components/ui/Card';
-import Button from '@/components/ui/Button';
+import { Phone, Mail, MapPin } from "lucide-react";
+import Container from "@/components/ui/Container";
+import SectionHeading from "@/components/ui/SectionHeading";
+import AnimatedSection from "@/components/ui/AnimatedSection";
+import Card from "@/components/ui/Card";
+import Button from "@/components/ui/Button";
 
 export default function ContactSection() {
   const contacts = [
     {
       icon: Phone,
-      title: 'Téléphone',
-      value: '+221 XX XXX XX XX',
-      href: 'tel:+221000000000',
+      title: "Téléphone",
+      value: "+221 77 141 92 83",
+      href: "tel:+221771419283",
     },
     {
       icon: Mail,
-      title: 'Email',
-      value: 'contact@sunulink.com',
-      href: 'mailto:contact@sunulink.com',
+      title: "Email",
+      value: "contact@sunulink.com",
+      href: "mailto:contact@sunulink.com",
     },
     {
       icon: MapPin,
-      title: 'Adresse',
-      value: 'Dakar, Sénégal',
-      href: '#',
+      title: "Adresse",
+      value: "Mermoz VDN rue MZ-97 immeuble Zanardo N 7667 -  Dakar, Sénégal",
+      href: "#",
     },
   ];
 

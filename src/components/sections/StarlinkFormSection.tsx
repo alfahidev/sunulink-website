@@ -92,35 +92,37 @@ export default function StarlinkFormSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Info Column */}
           <AnimatedSection>
-            <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-6">
-              Starlink
+            <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3.5 py-1 text-sm font-semibold text-primary mb-6">
+              🛰️ Service Officiel Starlink Sénégal
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-dark mb-6">
-              Installation du Kit Starlink
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark mb-6 tracking-tight">
+              Installation du Kit Starlink au Sénégal
             </h2>
             <p className="text-dark/80 text-lg mb-8 leading-relaxed">
-              Bénéficiez d&apos;une connexion Internet haut débit par satellite.
-              Remplissez le formulaire ci-dessous pour solliciter nos services
-              d&apos;installation.
+              Bénéficiez d&apos;une connexion <strong>Internet haut débit par satellite</strong> ultra-rapide partout au Sénégal. Remplissez le formulaire ci-dessous pour solliciter nos techniciens certifiés pour l&apos;installation, le pointage et la mise en service de votre <strong>Kit Starlink</strong>.
             </p>
 
             <ul className="space-y-4 mb-10">
               {[
-                'Internet haut débit par satellite',
-                'Installation professionnelle',
-                'Configuration complète',
-                'Support technique après installation',
-                'Couverture nationale',
+                'Internet haut débit par satellite ultra-rapide & faible latence',
+                'Installation Kit Starlink professionnelle et sécurisée',
+                'Configuration complète du routeur WiFi et du réseau local',
+                'Supervision, support technique 24/7 et maintenance terrain',
+                'Couverture totale dans les 14 régions et 46 départements du Sénégal',
               ].map((benefit, i) => (
-                <li key={i} className="flex items-center text-dark/90">
-                  <CheckCircle className="w-6 h-6 text-accent mr-3 shrink-0" />
-                  <span>{benefit}</span>
+                <li key={i} className="flex items-start text-dark/90">
+                  <CheckCircle className="w-5 h-5 text-accent mr-3 mt-1 shrink-0" />
+                  <span className="text-base">{benefit}</span>
                 </li>
               ))}
             </ul>
 
-            <div className="flex items-center justify-center p-8 bg-gray-light/50 rounded-2xl w-fit">
-              <Satellite className="w-24 h-24 text-secondary opacity-80" />
+            <div className="flex items-center gap-4 p-6 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-2xl border border-gray-200">
+              <Satellite className="w-12 h-12 text-secondary shrink-0" />
+              <div>
+                <p className="text-sm font-bold text-primary">Intervention Rapide sur Tout le Territoire</p>
+                <p className="text-xs text-gray-600 mt-0.5">Dakar, Thiès, Saint-Louis, Touba et l&apos;ensemble des régions sénégalaises.</p>
+              </div>
             </div>
           </AnimatedSection>
 

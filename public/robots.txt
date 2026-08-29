@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://sunulink.com/sitemap.xml
+Sitemap: https://sunulinktelecom.com/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1

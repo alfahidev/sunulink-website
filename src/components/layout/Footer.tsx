@@ -146,7 +146,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://sunulink.com"
+              href="https://sunulinktelecom.com"
               className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-secondary hover:text-white transition-all duration-300"
               aria-label="Website"
             >
