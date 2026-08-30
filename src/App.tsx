@@ -13,6 +13,7 @@ import ServicesSection from '@/components/sections/ServicesSection';
 import WhySunulinkSection from '@/components/sections/WhySunulinkSection';
 import AmbitionSection from '@/components/sections/AmbitionSection';
 import StarlinkFormSection from '@/components/sections/StarlinkFormSection';
+import FAQSection from '@/components/sections/FAQSection';
 import ContactSection from '@/components/sections/ContactSection';
 import CTASection from '@/components/sections/CTASection';
 
@@ -23,7 +24,7 @@ export default function App() {
         <title>SUNULINK Telecom SA — Connecter aujourd’hui, bâtir demain.</title>
         <meta
           name="description"
-          content="SUNULINK Telecom SA : solutions télécoms, installation Kit Starlink, Internet haut débit et déploiement réseau dans les 14 régions du Sénégal."
+          content="SUNULINK Telecom SA : Opérateur et intégrateur télécoms leader au Sénégal. Installation Kit Starlink, Internet haut débit et déploiement réseau dans les 14 régions."
         />
         <link rel="canonical" href="https://sunulinktelecom.com/" />
         <meta property="og:url" content="https://sunulinktelecom.com/" />
@@ -57,8 +58,11 @@ export default function App() {
           <WhySunulinkSection />
           <AmbitionSection />
 
-          {/* Starlink */}
+          {/* Starlink Formulaire */}
           <StarlinkFormSection />
+
+          {/* FAQ avec Rich Snippets */}
+          <FAQSection />
 
           {/* Contact */}
           <ContactSection />
