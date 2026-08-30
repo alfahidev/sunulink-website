@@ -12,7 +12,7 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const activeSection = useScrollSpy(['accueil', 'services', 'a-propos', 'starlink', 'contact']);
+  const activeSection = useScrollSpy(['accueil', 'services', 'a-propos', 'starlink', 'faq', 'contact']);
 
   useEffect(() => {
     const handleScroll = () => {

@@ -45,6 +45,7 @@ export default function Footer() {
                 { label: 'Services', href: '#services' },
                 { label: 'À propos', href: '#a-propos' },
                 { label: 'Starlink', href: '#starlink' },
+                { label: 'FAQ', href: '#faq' },
                 { label: 'Contact', href: '#contact' },
               ].map((link) => (
                 <li key={link.label}>
