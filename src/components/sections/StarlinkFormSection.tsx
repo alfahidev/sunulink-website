@@ -65,26 +65,32 @@ export default function StarlinkFormSection() {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setStatus("loading");
+    setStatusMessage("");
     try {
       const response = await sendStarlinkRequest({
         ...formData,
         latitude: position ? position.latitude.toString() : "",
         longitude: position ? position.longitude.toString() : "",
       });
-      setStatus("success");
-      setStatusMessage(response.message);
-      setFormData({
-        fullName: "",
-        phone: "",
-        email: "",
-        region: "",
-        departement: "",
-        address: "",
-        message: "",
-      });
-    } catch {
+      if (response.success) {
+        setStatus("success");
+        setStatusMessage(response.message || "Votre demande a été envoyée avec succès ! Notre équipe technique vous contactera sous peu.");
+        setFormData({
+          fullName: "",
+          phone: "",
+          email: "",
+          region: "",
+          departement: "",
+          address: "",
+          message: "",
+        });
+      } else {
+        setStatus("error");
+        setStatusMessage(response.message || "Une erreur est survenue lors de l'envoi de votre demande.");
+      }
+    } catch (err: any) {
       setStatus("error");
-      setStatusMessage("Une erreur est survenue lors de l'envoi.");
+      setStatusMessage(err?.message || "Une erreur est survenue lors de l'envoi de votre demande.");
     }
   };
 
