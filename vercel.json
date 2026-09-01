@@ -49,7 +49,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!assets/|images/|favicon|site.webmanifest|robots.txt|sitemap.xml|og-image).*)",
+      "source": "/((?!api/|assets/|images/|favicon|site.webmanifest|robots.txt|sitemap.xml|og-image).*)",
       "destination": "/index.html"
     }
   ]
