@@ -74,7 +74,10 @@ export default function StarlinkFormSection() {
       });
       if (response.success) {
         setStatus("success");
-        setStatusMessage(response.message || "Votre demande a été envoyée avec succès ! Notre équipe technique vous contactera sous peu.");
+        setStatusMessage(
+          response.message ||
+            "Votre demande a été envoyée avec succès ! Notre équipe technique vous contactera sous peu.",
+        );
         setFormData({
           fullName: "",
           phone: "",
@@ -86,11 +89,17 @@ export default function StarlinkFormSection() {
         });
       } else {
         setStatus("error");
-        setStatusMessage(response.message || "Une erreur est survenue lors de l'envoi de votre demande.");
+        setStatusMessage(
+          response.message ||
+            "Une erreur est survenue lors de l'envoi de votre demande.",
+        );
       }
     } catch (err: any) {
       setStatus("error");
-      setStatusMessage(err?.message || "Une erreur est survenue lors de l'envoi de votre demande.");
+      setStatusMessage(
+        err?.message ||
+          "Une erreur est survenue lors de l'envoi de votre demande.",
+      );
     }
   };
 
@@ -181,7 +190,7 @@ export default function StarlinkFormSection() {
                     type="tel"
                     icon={Phone}
                     required
-                    placeholder="+221 XX XXX XX XX"
+                    placeholder="+221 77 141 92 83"
                     value={formData.phone}
                     onChange={handleChange}
                   />

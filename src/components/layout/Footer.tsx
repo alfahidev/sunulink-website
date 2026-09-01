@@ -1,5 +1,5 @@
-import { Globe, Mail, Phone, MapPin } from 'lucide-react';
-import Container from '@/components/ui/Container';
+import { Globe, Mail, Phone, MapPin } from "lucide-react";
+import Container from "@/components/ui/Container";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -7,9 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-white relative overflow-hidden pt-16 pb-8">
       {/* Subtle network pattern overlay */}
-      <div
-        className="absolute inset-0 opacity-10 pointer-events-none network-pattern"
-      />
+      <div className="absolute inset-0 opacity-10 pointer-events-none network-pattern" />
 
       <Container className="relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
@@ -30,7 +28,9 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Connecter aujourd&apos;hui, bâtir demain. Fournisseur de solutions de télécommunications innovantes au Sénégal et dans les 14 régions.
+              Connecter aujourd&apos;hui, bâtir demain. Fournisseur de solutions
+              de télécommunications innovantes au Sénégal et dans les 14
+              régions.
             </p>
           </div>
 
@@ -41,12 +41,12 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               {[
-                { label: 'Accueil', href: '#accueil' },
-                { label: 'Services', href: '#services' },
-                { label: 'À propos', href: '#a-propos' },
-                { label: 'Starlink', href: '#starlink' },
-                { label: 'FAQ', href: '#faq' },
-                { label: 'Contact', href: '#contact' },
+                { label: "Accueil", href: "#accueil" },
+                { label: "Services", href: "#services" },
+                { label: "À propos", href: "#a-propos" },
+                { label: "Starlink", href: "#starlink" },
+                { label: "FAQ", href: "#faq" },
+                { label: "Contact", href: "#contact" },
               ].map((link) => (
                 <li key={link.label}>
                   <a
@@ -67,11 +67,11 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               {[
-                'Internet & Connectivité',
-                'Installation & Déploiement',
-                'Maintenance & Support',
-                'Réseaux & Infrastructures',
-                'Connectivité Satellitaire',
+                "Internet & Connectivité",
+                "Installation & Déploiement",
+                "Maintenance & Support",
+                "Réseaux & Infrastructures",
+                "Connectivité Satellitaire",
               ].map((service) => (
                 <li key={service} className="text-gray-300 text-sm">
                   {service}
@@ -92,7 +92,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 text-gray-300 text-sm">
                 <Phone size={18} className="text-secondary shrink-0 mt-0.5" />
-                <span>+221 XX XXX XX XX</span>
+                <span>+221 77 141 92 83</span>
               </li>
               <li className="flex items-start gap-3 text-gray-300 text-sm">
                 <MapPin size={18} className="text-secondary shrink-0 mt-0.5" />
