@@ -16,9 +16,9 @@ interface FAQItem {
 const faqs: FAQItem[] = [
   {
     category: 'Entreprise & Identité',
-    question: "Qu'est-ce que SUNULINK Telecom SA ?",
+    question: "Qu'est-ce que SUNULINK Network SA ?",
     answer:
-      "SUNULINK Telecom SA est une société anonyme de télécommunications sénégalaise de référence. Forte de plus de 12 ans d'expérience terrain et d'un réseau structuré de plus de 180 professionnels, SUNULINK est spécialisée dans l'Internet haut débit, l'installation de kits satellites Starlink, le déploiement d'infrastructures réseaux et la maintenance sur l'ensemble des 14 régions du Sénégal.",
+      "SUNULINK Network SA est une société anonyme sénégalaise de référence spécialisée dans les infrastructures réseaux et la connectivité. Forte de plus de 12 ans d'expérience terrain et d'un réseau structuré de plus de 180 professionnels, SUNULINK est spécialisée dans l'Internet haut débit, l'installation de kits satellites Starlink, le déploiement d'infrastructures réseaux et la maintenance sur l'ensemble des 14 régions du Sénégal.",
   },
   {
     category: 'Starlink & Satellite',
@@ -28,21 +28,21 @@ const faqs: FAQItem[] = [
   },
   {
     category: 'Couverture Territoriale',
-    question: "Dans quelles régions du Sénégal SUNULINK Telecom SA intervient-elle ?",
+    question: "Dans quelles régions du Sénégal SUNULINK Network SA intervient-elle ?",
     answer:
-      "SUNULINK Telecom SA couvre 100% du territoire national sénégalais : Dakar, Thiès, Diourbel, Fatick, Kaolack, Kaffrine, Louga, Saint-Louis, Matam, Tambacounda, Kédougou, Kolda, Sédhiou et Ziguinchor (46 départements). Nos équipes interviennent aussi bien en zones urbaines, périurbaines qu'en zones rurales éloignées.",
+      "SUNULINK Network SA couvre 100% du territoire national sénégalais : Dakar, Thiès, Diourbel, Fatick, Kaolack, Kaffrine, Louga, Saint-Louis, Matam, Tambacounda, Kédougou, Kolda, Sédhiou et Ziguinchor (46 départements). Nos équipes interviennent aussi bien en zones urbaines, périurbaines qu'en zones rurales éloignées.",
   },
   {
     category: 'Solutions & Services',
-    question: 'Quels sont les services télécoms proposés par SUNULINK ?',
+    question: 'Quels sont les services proposés par SUNULINK Network ?',
     answer:
-      'SUNULINK Telecom SA intervient sur toute la chaîne de valeur : Internet & Connectivité haut débit, Déploiement et installation d’équipements télécoms, Réseaux & Infrastructures (dernier kilomètre), Solutions satellitaires de pointe, et Maintenance préventive / corrective avec support technique 24/7.',
+      'SUNULINK Network SA intervient sur toute la chaîne de valeur : Internet & Connectivité haut débit, Déploiement et installation d’équipements réseaux, Réseaux & Infrastructures (dernier kilomètre), Solutions satellitaires de pointe (Starlink), et Maintenance préventive / corrective avec support technique 24/7.',
   },
   {
     category: 'Différenciation & Confiance',
-    question: 'Quelle est la différence entre SUNULINK Telecom SA et les autres acteurs ?',
+    question: 'Quelle est la différence entre SUNULINK Network SA et les autres acteurs ?',
     answer:
-      'SUNULINK Telecom SA est l’organisation télécoms nationale structurée avec plus de 24 000 foyers connectés, 180 techniciens certifiés et une présence locale permanente dans chaque région du Sénégal, garantissant une réactivité immédiate et une conformité technique totale.',
+      'SUNULINK Network SA est l’organisation réseau nationale structurée avec plus de 24 000 foyers connectés, 180 techniciens certifiés et une présence locale permanente dans chaque région du Sénégal, garantissant une réactivité immédiate et une conformité technique totale.',
   },
   {
     category: 'Support & Délais',
@@ -65,8 +65,8 @@ export default function FAQSection() {
         <AnimatedSection>
           <SectionHeading
             badge="Foire Aux Questions"
-            title="Questions fréquentes sur SUNULINK Telecom"
-            subtitle="Tout ce que vous devez savoir sur nos services télécoms, l'installation Starlink et notre couverture au Sénégal."
+            title="Questions fréquentes sur SUNULINK Network"
+            subtitle="Tout ce que vous devez savoir sur nos services réseaux, l'installation Starlink et notre couverture au Sénégal."
             centered={true}
           />
         </AnimatedSection>

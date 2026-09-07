@@ -28,7 +28,7 @@ const LastKmSection: React.FC = () => {
             
             <div className="space-y-4 text-gray-600 text-lg">
               <p>
-                Notre ambition ne s'arrête pas à déployer des infrastructures. SUNULINK Telecom SA intervient là où la connectivité prend réellement tout son sens : chez l'utilisateur final.
+                Notre ambition ne s'arrête pas à déployer des infrastructures. SUNULINK Network SA intervient là où la connectivité prend réellement tout son sens : chez l'utilisateur final.
               </p>
               <p>
                 Des grands centres urbains aux territoires plus éloignés, nous mettons notre connaissance du terrain, nos équipes locales et nos capacités techniques au service d'une connectivité plus inclusive.

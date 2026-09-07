@@ -32,7 +32,7 @@ export default function AmbitionSection() {
             
             <div className="mt-12 pt-8 border-t border-white/20 inline-block">
               <p className="text-lg font-bold text-white tracking-wide">
-                SUNULINK Telecom SA <span className="text-orange-400 mx-2">—</span> <span className="font-normal text-blue-100">Connecter aujourd'hui, bâtir demain.</span>
+                SUNULINK Network SA <span className="text-orange-400 mx-2">—</span> <span className="font-normal text-blue-100">Connecter aujourd'hui, bâtir demain.</span>
               </p>
             </div>
           </div>

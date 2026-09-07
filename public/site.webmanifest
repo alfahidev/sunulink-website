@@ -1,7 +1,7 @@
 {
-  "name": "SUNULINK Telecom SA",
-  "short_name": "SUNULINK",
-  "description": "Connecter aujourd’hui, bâtir demain. Solutions télécoms et installation Kit Starlink au Sénégal.",
+  "name": "SUNULINK Network SA",
+  "short_name": "SUNULINK Network",
+  "description": "Connecter aujourd’hui, bâtir demain. Solutions réseaux et installation Kit Starlink au Sénégal.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#003B73",

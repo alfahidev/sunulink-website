@@ -50,7 +50,7 @@ export default function HeroSection() {
             className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/95 text-xs sm:text-sm font-semibold border border-white/20 backdrop-blur-md shadow-lg"
           >
             <span className="w-2 h-2 rounded-full bg-accent animate-ping" />
-            <span>Opérateur &amp; Intégrateur Télécoms au Sénégal</span>
+            <span>Opérateur &amp; Intégrateur Réseaux au Sénégal</span>
           </motion.div>
 
           {/* Main H1 Title */}
@@ -80,8 +80,8 @@ export default function HeroSection() {
             transition={{ delay: 0.6 }}
             className="text-base sm:text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed"
           >
-            <strong>SUNULINK Telecom SA</strong>, votre partenaire de confiance
-            en solutions télécoms au Sénégal. Déploiement réseau,{" "}
+            <strong>SUNULINK Network SA</strong>, votre partenaire de confiance
+            en solutions réseaux et connectivité au Sénégal. Déploiement d&apos;infrastructures,{" "}
             <strong>Internet haut débit</strong> et{" "}
             <strong>Installation Kit Starlink</strong> certifiée dans les 14
             régions.

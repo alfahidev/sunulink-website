@@ -54,10 +54,10 @@ export const sendStarlinkRequest = async (
         body: JSON.stringify({
           from:
             import.meta.env.VITE_RESEND_FROM_EMAIL ||
-            'SUNULINK Telecom <onboarding@resend.dev>',
+            'SUNULINK Network <onboarding@resend.dev>',
           to: [
             import.meta.env.VITE_CONTACT_EMAIL ||
-            'contact@sunulinktelecom.com',
+            'contact@sunulinknetwork.com',
           ],
           reply_to: data.email || undefined,
           subject: `🚀 Nouvelle Demande Kit Starlink — ${data.fullName} (${data.region})`,

@@ -68,7 +68,7 @@ export default function Navbar() {
                   isScrolled ? 'text-accent' : 'text-accent-light'
                 )}
               >
-                Telecom SA
+                Network SA
               </span>
             </div>
           </a>

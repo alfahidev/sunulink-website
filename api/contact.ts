@@ -66,12 +66,12 @@ export default async function handler(req: any, res: any) {
     const toEmail =
       process.env.CONTACT_EMAIL ||
       process.env.VITE_CONTACT_EMAIL ||
-      'contact@sunulinktelecom.com';
+      'contact@sunulinknetwork.com';
 
     const fromEmail =
       process.env.RESEND_FROM_EMAIL ||
       process.env.VITE_RESEND_FROM_EMAIL ||
-      'SUNULINK Telecom <onboarding@resend.dev>';
+      'SUNULINK Network <onboarding@resend.dev>';
 
     // Build GPS Google Maps link
     const hasGPS = latitude && longitude && latitude !== '' && longitude !== '';
@@ -111,7 +111,7 @@ export default async function handler(req: any, res: any) {
 <body>
   <div class="card">
     <div class="header">
-      <div class="brand">SUNULINK <span class="brand-accent">Telecom SA</span></div>
+      <div class="brand">SUNULINK <span class="brand-accent">Network SA</span></div>
       <div class="tag">📡 Demande d'Installation Kit Starlink</div>
     </div>
     <div class="body">
@@ -180,7 +180,7 @@ export default async function handler(req: any, res: any) {
       </div>
     </div>
     <div class="footer">
-      <strong>SUNULINK Telecom SA</strong> — Connecter aujourd’hui, bâtir demain.<br>
+      <strong>SUNULINK Network SA</strong> — Connecter aujourd’hui, bâtir demain.<br>
       Dakar, Sénégal • Présence opérationnelle dans les 14 régions
     </div>
   </div>
