@@ -19,7 +19,7 @@ export default function ForceTerrainSection() {
               La technologie seule ne suffit pas. Pour connecter durablement un territoire, il faut connaître ses infrastructures, ses contraintes géographiques, ses usages, ses langues et ses populations.
             </p>
             <p className="font-semibold text-white text-xl">
-              C'est pourquoi SUNULINK Telecom SA s'appuie sur :
+              C'est pourquoi SUNULINK Network SA s'appuie sur :
             </p>
           </div>
         </AnimatedSection>

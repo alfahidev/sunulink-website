@@ -21,17 +21,17 @@ export default function App() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>SUNULINK Telecom SA — Connecter aujourd’hui, bâtir demain.</title>
+        <title>SUNULINK Network SA — Connecter aujourd’hui, bâtir demain.</title>
         <meta
           name="description"
-          content="SUNULINK Telecom SA : Opérateur et intégrateur télécoms leader au Sénégal. Installation Kit Starlink, Internet haut débit et déploiement réseau dans les 14 régions."
+          content="SUNULINK Network SA : Opérateur et intégrateur de réseaux leader au Sénégal. Installation Kit Starlink, Internet haut débit et connectivité dans les 14 régions."
         />
-        <link rel="canonical" href="https://sunulinktelecom.com/" />
-        <meta property="og:url" content="https://sunulinktelecom.com/" />
-        <meta property="og:image" content="https://sunulinktelecom.com/og-image.jpg" />
-        <meta property="og:image:secure_url" content="https://sunulinktelecom.com/og-image.jpg" />
-        <meta property="twitter:url" content="https://sunulinktelecom.com/" />
-        <meta property="twitter:image" content="https://sunulinktelecom.com/og-image.jpg" />
+        <link rel="canonical" href="https://sunulinknetwork.com/" />
+        <meta property="og:url" content="https://sunulinknetwork.com/" />
+        <meta property="og:image" content="https://sunulinknetwork.com/og-image.jpg" />
+        <meta property="og:image:secure_url" content="https://sunulinknetwork.com/og-image.jpg" />
+        <meta property="twitter:url" content="https://sunulinknetwork.com/" />
+        <meta property="twitter:image" content="https://sunulinknetwork.com/og-image.jpg" />
       </Helmet>
 
       <div className="min-h-screen bg-white font-sans antialiased">

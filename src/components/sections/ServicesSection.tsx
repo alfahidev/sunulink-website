@@ -28,8 +28,8 @@ export default function ServicesSection() {
         <AnimatedSection>
           <SectionHeading
             badge="Nos solutions"
-            title="Des solutions télécoms de bout en bout"
-            subtitle="SUNULINK Telecom SA intervient sur l'ensemble de la chaîne de valeur de la connectivité : de l'étude du besoin jusqu'à l'installation, l'exploitation et la maintenance."
+            title="Des solutions réseaux et connectivité de bout en bout"
+            subtitle="SUNULINK Network SA intervient sur l'ensemble de la chaîne de valeur de la connectivité : de l'étude du besoin jusqu'à l'installation, l'exploitation et la maintenance."
             centered={true}
           />
         </AnimatedSection>
@@ -136,7 +136,7 @@ export default function ServicesSection() {
                               {service.title}
                             </p>
                             <p className="text-xs text-gray-300">
-                              SUNULINK Telecom SA • 14 Régions
+                              SUNULINK Network SA • 14 Régions
                             </p>
                           </div>
                         </div>

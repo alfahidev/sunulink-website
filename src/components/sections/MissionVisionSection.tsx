@@ -33,7 +33,7 @@ export default function MissionVisionSection() {
                 Un Sénégal connecté, sans territoire oublié.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                SUNULINK Telecom SA souhaite contribuer à réduire la fracture numérique et accompagner le développement de nouvelles infrastructures de connectivité au Sénégal.
+                SUNULINK Network SA souhaite contribuer à réduire la fracture numérique et accompagner le développement de nouvelles infrastructures de connectivité au Sénégal.
               </p>
             </Card>
           </AnimatedSection>

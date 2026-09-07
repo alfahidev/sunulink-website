@@ -16,10 +16,10 @@ export default function AboutSection() {
           <AnimatedSection delay={0.2}>
             <div className="space-y-6 text-lg text-gray-700">
               <p>
-                SUNULINK Telecom SA est née d'une expérience de terrain construite au plus près des besoins de connectivité des populations et des entreprises sénégalaises.
+                SUNULINK Network SA est née d'une expérience de terrain construite au plus près des besoins de connectivité des populations et des entreprises sénégalaises.
               </p>
               <p>
-                Notre organisation s'appuie sur un réseau historique regroupant des professionnels spécialisés dans la vente, l'installation, le déploiement et la maintenance d'équipements et de solutions de télécommunications.
+                Notre organisation s'appuie sur un réseau historique regroupant des professionnels spécialisés dans la vente, l'installation, le déploiement et la maintenance d'équipements et d'infrastructures réseaux.
               </p>
               <div className="p-6 bg-blue-50 border-l-4 border-blue-600 rounded-r-lg">
                 <p className="text-xl font-medium text-blue-900 italic">
@@ -36,13 +36,13 @@ export default function AboutSection() {
               </h3>
               <div className="space-y-6 text-gray-600">
                 <p>
-                  Depuis plus de 12 ans, nos équipes et partenaires interviennent dans l'écosystème des télécommunications au Sénégal.
+                  Depuis plus de 12 ans, nos équipes et partenaires interviennent dans l'écosystème des réseaux et télécommunications au Sénégal.
                 </p>
                 <p>
                   Au fil des années, nous avons développé une connaissance approfondie des réalités locales, constitué un réseau de professionnels présents sur le terrain et participé au déploiement de solutions de connectivité auprès de milliers de foyers.
                 </p>
                 <p className="font-semibold text-gray-900">
-                  Cette expérience constitue aujourd'hui l'ADN de SUNULINK Telecom SA.
+                  Cette expérience constitue aujourd'hui l'ADN de SUNULINK Network SA.
                 </p>
               </div>
             </div>

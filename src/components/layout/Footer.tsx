@@ -23,13 +23,13 @@ export default function Footer() {
                   Sunulink
                 </span>
                 <span className="text-[0.65rem] font-semibold uppercase tracking-wider text-accent">
-                  Telecom SA
+                  Network SA
                 </span>
               </div>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
               Connecter aujourd&apos;hui, bâtir demain. Fournisseur de solutions
-              de télécommunications innovantes au Sénégal et dans les 14
+              réseaux et connectivité innovantes au Sénégal et dans les 14
               régions.
             </p>
           </div>
@@ -108,7 +108,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-400 text-sm text-center md:text-left">
-            © {currentYear} SUNULINK Telecom SA. Tous droits réservés.
+            © {currentYear} SUNULINK Network SA. Tous droits réservés.
           </p>
 
           <div className="flex items-center gap-3">
@@ -147,7 +147,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://sunulinktelecom.com"
+              href="https://sunulinknetwork.com"
               className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-secondary hover:text-white transition-all duration-300"
               aria-label="Website"
             >

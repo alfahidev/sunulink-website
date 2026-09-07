@@ -48,13 +48,13 @@ export default defineConfig(({ mode }) => {
                     env.CONTACT_EMAIL ||
                     env.VITE_CONTACT_EMAIL ||
                     process.env.CONTACT_EMAIL ||
-                    'contact@sunulinktelecom.com';
+                    'contact@sunulinknetwork.com';
 
                   const fromEmail =
                     env.RESEND_FROM_EMAIL ||
                     env.VITE_RESEND_FROM_EMAIL ||
                     process.env.RESEND_FROM_EMAIL ||
-                    'SUNULINK Telecom <onboarding@resend.dev>';
+                    'SUNULINK Network <onboarding@resend.dev>';
 
                   const hasGPS =
                     data.latitude &&
@@ -70,7 +70,7 @@ export default defineConfig(({ mode }) => {
                   const emailHtml = `
                     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden;">
                       <div style="background: #003B73; color: white; padding: 24px; text-align: center;">
-                        <h1 style="margin: 0; font-size: 22px;">SUNULINK <span style="color: #FF7A00;">Telecom SA</span></h1>
+                        <h1 style="margin: 0; font-size: 22px;">SUNULINK <span style="color: #FF7A00;">Network SA</span></h1>
                         <p style="margin: 6px 0 0; font-size: 13px; color: #93c5fd;">Nouvelle Demande d'Installation Kit Starlink</p>
                       </div>
                       <div style="padding: 24px; background: white;">
@@ -98,7 +98,7 @@ export default defineConfig(({ mode }) => {
                         </div>
                       </div>
                       <div style="background: #1e2939; color: #9ca3af; text-align: center; padding: 16px; font-size: 12px;">
-                        SUNULINK Telecom SA — Connecter aujourd’hui, bâtir demain.
+                        SUNULINK Network SA — Connecter aujourd’hui, bâtir demain.
                       </div>
                     </div>
                   `;

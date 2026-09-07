@@ -59,7 +59,7 @@ export const services: Service[] = [
     shortDescription:
       "Déploiement et optimisation d'infrastructures permettant d'étendre la couverture et la qualité des services.",
     fullDescription:
-      "SUNULINK Telecom SA accompagne le développement d'infrastructures permettant d'améliorer la couverture et la qualité des télécommunications. Nous intervenons notamment sur les réseaux d'accès, les équipements de distribution, les points de connexion et les infrastructures nécessaires au dernier kilomètre.",
+      "SUNULINK Network SA accompagne le développement d'infrastructures permettant d'améliorer la couverture et la qualité des télécommunications et des réseaux d'entreprise. Nous intervenons notamment sur les réseaux d'accès, les équipements de distribution, les points de connexion et les infrastructures nécessaires au dernier kilomètre.",
     solutions: [
       "Réseaux d'accès & transmission",
       'Équipements de distribution',
@@ -74,7 +74,7 @@ export const services: Service[] = [
     shortDescription:
       "Installation et accompagnement au déploiement de solutions de connectivité satellitaire, notamment dans les zones difficiles à couvrir.",
     fullDescription:
-      "Le satellite ouvre de nouvelles possibilités pour connecter rapidement les territoires éloignés ou insuffisamment couverts par les infrastructures terrestres. SUNULINK Telecom SA accompagne le déploiement de solutions satellitaires de haute performance. Notre réseau territorial assure une assistance technique locale continue.",
+      "Le satellite ouvre de nouvelles possibilités pour connecter rapidement les territoires éloignés ou insuffisamment couverts par les infrastructures terrestres. SUNULINK Network SA accompagne le déploiement de solutions satellitaires de haute performance. Notre réseau territorial assure une assistance technique locale continue.",
     solutions: [
       'Étude et qualification du site',
       'Installation et fixation antenne',
